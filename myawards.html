@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <link type="text/css" href="css/materialize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        @font-face {
+            src: url(1.otf);
+            font-family: MyFont;
+        }
+        
+        @font-face {
+            src: url(2.otf);
+            font-family: MyFont2;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        body {
+            height: 100%;
+            font-family: MyFont2
+        }
+        
+        .text{
+            font-family: MyFont;
+        }
+    </style>
+</head>
+<body>
+    <nav class="pushpin-demo-nav z-depth-4">
+        <div class="nav-wrapper   teal darken-3">
+            <a href="index.html" class="brand-logo center">
+                <p class="flow-text text" style="font-weight: 500">ПРИВЕТ, Я ТИМУР :)</p>
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse "><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+                <a class="dropdown-button btn" href="#" data-activates="dropdown1">Открой меня!</a>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="myworks.html">Мои Работы</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </ul>
+            <ul class="side-nav indigo lighten-1" id="mobile-demo">
+            
+                
+                    <li><a href="index.html" class="white-text">Главная</a></li>
+                    <li><a href="myworks.html" class="white-text">Мои Работы</a></li>
+                   
+                    
+              
+            </ul>
+        </div>
+    </nav>
+    <div class="row container" style="margin-bottom: 350px;">
+        <div class="col s12 m6">
+            <h1 class="flow-text">Страница в разработке</h1>
+        </div>
+    </div>
+    <footer>
+        <div class="teal  lighten-1 ">
+            <div class="teal darken-1 " style="width: 90%; margin-left:5%; height: 150px;position: relative">
+                <div style="width: 100%" class="center-align">
+                    <a><img src="img/twicon.png" class="responsive-img circle" style="height: 50px; "></a>
+                    <a href="https://vk.com/l0mrmidnight0l"><img src="img/vkicon2.ico" class="responsive-img circle" style="height:50px; margin-left: 10px;"></a>
+                    <a href="#"><img src="img/giticon.png" class="responsive-img circle" style="height:50px;margin-left: 10px"></a>
+                     <a href="https://mail.google.com/mail/u/0/#search/tz220404%40gmail.com"><img src="img/gicon.png" class="responsive-img circle" style="height:50px;margin-left: 10px"></a>
+                </div>
+                <div style=" width: 100%; position: absolute; bottom: 20px" class="center-align">
+                    <p class="grey-text darken-3"> Copyright © 20!8 Timur Zakharov • Web Designer & Developer</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function() {
+             AOS.init();
+            $(".button-collapse").sideNav();
+            $('.target').pushpin({
+                top: 0,
+                bottom: 1000,
+                offset: 0
+            });
+           
+            $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrainWidth: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left', // Displays dropdown with edge aligned to the left of button
+      stopPropagation: false // Stops event propagation
+    }
+  );
+
+            /*var options = [{
+                      selector: '#test', offset: 100, callback: function(el) { $(el).css('opaciy', 1);}
+                    }
+                ,
+            /* {selector: '.other-class', offset: 200, callback: function() {
+               customCallbackFunc();
+             } },
+        ]; Materialize.scrollFire(options);*/
+
+            $('.carousel').carousel();
+        })
+        $('.pushpin-demo-nav').each(function() {
+            var $this = $(this);
+            var $target = $('#' + $(this).attr('data-target'));
+            $this.pushpin({
+                top: $target.offset().top,
+                bottom: $target.offset().top + $target.outerHeight() - $this.height()
+            });
+        });
+        
+
+    </script>
+</body>
+</html>

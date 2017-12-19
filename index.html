@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- коментарий -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" href="css/materialize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        @font-face {
+            src: url(1.otf);
+            font-family: MyFont;
+        }
+        
+        @font-face {
+            src: url(2.otf);
+            font-family: MyFont2;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        body {
+            height: 100%;
+            font-family: MyFont2
+        }
+        
+        .block {
+            height: 800px;
+            background-image: url(img/header.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        .block1 {
+            height: 200px;
+            width: 300px;
+            background: red;
+            /*opacity: 0;*/
+        }
+        
+        #test {}
+        
+        .height1 {
+            height: 550px;
+        }
+        
+        .m-100 {
+            margin-top: 200px;
+            margin-bottom: 100px;
+            height: 100px;
+        }
+        
+        .text {
+            font-family: MyFont;
+            font-size: 35px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="pushpin-demo-nav z-depth-4">
+        <div class="nav-wrapper   teal darken-3">
+            <a href="index.html" class="brand-logo center">
+                <p class="flow-text text" style="font-weight: 500">ПРИВЕТ, Я ТИМУР :)</p>
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse "><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+                <a class="dropdown-button btn" href="#" data-activates="dropdown1">Открой меня!</a>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="myworks.html">Мои Работы</a></li>
+                    <li><a href="myawards.html">Мои Достижения</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </ul>
+            <ul class="side-nav indigo lighten-1" id="mobile-demo">
+               
+                
+                    <li><a href="myworks.html">Мои Работы</a></li>
+                    <li><a href="myawards.html">Мои Достижения</a></li>
+                    <li class="divider"></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="row hide-on-med-and-down">
+        <div class="col s12">
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="img/pic3.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="img/pic4.png"></a>
+                <a class="carousel-item" href="#three!"><img src="img/pic6.png"></a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row " >
+        <div class="col s12 m4 hoverable" data-aos="fade-right" data-aos-duration="4000" data-aos-offset="410">
+            <div class="card green darken-1">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/flat4.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator white-text text-darken-4">Немного обо мне<i class="material-icons right">add_box</i></span>
+                </div>
+                <div class="card-reveal blue darken-1">
+                    <span class="card-title white-text text-darken-4">Немного обо мне<i class="material-icons right">close</i></span>
+                    <p class="white-text">Я начинающий программист, но уже знаю языки программирования такие как HTML, JS, библиотеки Phaser, Materialize и Google api. Помимо программирования, я увлекаюсь роботехникой на микроконтроллере Arduino, люблю играть на гитаре и в компьютерные игры.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col s12 m4 hoverable" data-aos="fade-up" data-aos-duration="4000" data-aos-offset="410">
+            <div class="card orange darken-1">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="img/ava.png">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col s12 m4 hoverable" data-aos="fade-left" data-aos-duration="4000" data-aos-offset="410">
+            <div class="card blue darken-1">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/pic3.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator white-text text-darken-4">Персональные данные<i class="material-icons right">add_box</i></span>
+                </div>
+                <div class="card-reveal green darken-1">
+                    <span class="card-title white-text text-darken-4">Персональные данные<i class="material-icons right">close</i></span>
+                    <ul class="white-text">
+                        <li>Меня зовут Захаров Тимур.</li>
+                        <li>Я учусь в ФТЛ им. В.П. Ларионова.</li>
+                        <li>В 7 классе, мне 13 лет.</li>
+                        <li>Живу в г. Якутск, Россия</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="padding-top: 20px;">
+        <div class="teal  lighten-1 ">
+            <div class="teal darken-1 " style="width: 90%; margin-left:5%; height: 150px;position: relative">
+                <div style="width: 100%" class="center-align">
+                    <a><img src="img/twicon.png" class="responsive-img circle" style="height: 50px; "></a>
+                    <a href="https://vk.com/l0mrmidnight0l"><img src="img/vkicon2.ico" class="responsive-img circle" style="height:50px; margin-left: 10px;"></a>
+                    <a href="#"><img src="img/giticon.png" class="responsive-img circle" style="height:50px;margin-left: 10px"></a>
+                     <a href="https://mail.google.com/mail/u/0/#search/tz220404%40gmail.com"><img src="img/gicon.png" class="responsive-img circle" style="height:50px;margin-left: 10px"></a>
+                </div>
+                <div style=" width: 100%; position: absolute; bottom: 20px" class="center-align">
+                    <p class="grey-text darken-3"> Copyright © 20!8 Timur Zakharov • Web Designer & Developer</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!--<div class="slider  ">
+        <ul class="slides">
+            <li>
+                <img src="img/pic7.jpg">
+                <!-- random image 
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/pic3.jpg">
+                <!-- random image 
+                <div class="caption left-align">
+                    <h3>Left Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/pic4.png">
+                <!-- random image 
+                <div class="caption right-align">
+                    <h3>Right Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/pic5.jpg">
+                <!-- random image 
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>-->
+
+
+
+
+    <!-- <ul id="test">
+       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nobis ducimus, porro, illo earum ipsam laboriosam. Dolorem qui eveniet voluptates, recusandae quod maxime dicta itaque fuga autem, quaerat rerum vitae.</li>
+       <li>Id repudiandae nostrum ad, vitae sequi quisquam consectetur sint reiciendis consequuntur quos, ab, vel tempora similique quam expedita perferendis modi doloribus est, illum inventore nemo amet. Consequuntur alias aperiam maxime!</li>
+       <li>Nesciunt nam rerum laborum, odit qui esse doloremque maxime, tempore consequuntur nihil laudantium voluptatem. Ea asperiores minima, corporis illo architecto. Expedita omnis ex non facilis porro consectetur animi voluptas nobis.</li>
+       <li>Dolorem distinctio, dolores voluptatibus eveniet laudantium libero vero, vel maiores voluptates, harum voluptatem. Consequuntur natus libero molestias commodi optio, voluptate ad dicta blanditiis facere repellendus, corporis odio velit iste! Inventore!</li>
+       <li>Labore dolores illum doloremque iure necessitatibus maiores molestias, qui ab esse, nemo natus eius quo odit cum. Nesciunt accusantium ab, nobis exercitationem similique eos quia quaerat reiciendis quibusdam odio eaque.</li>
+   </ul> -->
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function() {
+             AOS.init();
+            $(".button-collapse").sideNav();
+            $('.target').pushpin({
+                top: 0,
+                bottom: 1000,
+                offset: 0
+            });
+           
+            $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrainWidth: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left', // Displays dropdown with edge aligned to the left of button
+      stopPropagation: false // Stops event propagation
+    }
+  );
+
+            /*var options = [{
+                      selector: '#test', offset: 100, callback: function(el) { $(el).css('opaciy', 1);}
+                    }
+                ,
+            /* {selector: '.other-class', offset: 200, callback: function() {
+               customCallbackFunc();
+             } },
+        ]; Materialize.scrollFire(options);*/
+
+            $('.carousel').carousel();
+        })
+        $('.pushpin-demo-nav').each(function() {
+            var $this = $(this);
+            var $target = $('#' + $(this).attr('data-target'));
+            $this.pushpin({
+                top: $target.offset().top,
+                bottom: $target.offset().top + $target.outerHeight() - $this.height()
+            });
+        });
+        
+
+    </script>
+</body>
+
+</html>
